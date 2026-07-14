@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Blog Swash Title';
+  src: url('/fonts/ZhiMangXing.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --blog-title-font: 'Blog Swash Title', 'Zhi Mang Xing', 'Kaiti SC', KaiTi, cursive;
+  --blog-body-font: 'Songti SC', STSong, SimSun, 'Noto Serif SC', serif;
+  --blog-ui-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+#post-info .post-title,
+#page .page-title,
+#recent-posts > .recent-post-items > .recent-post-item > .recent-post-info > .article-title,
+#article-container h1,
+#article-container h2,
+#article-container h3 {
+  font-family: var(--blog-title-font);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#recent-posts > .recent-post-items > .recent-post-item > .recent-post-info > .article-title {
+  font-size: 1.82rem;
+  line-height: 1.16;
+}
+
+#article-container,
+#recent-posts > .recent-post-items > .recent-post-item > .recent-post-info > .content {
+  font-family: var(--blog-body-font);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+#post-meta,
+#post-meta a,
+#recent-posts > .recent-post-items > .recent-post-item > .recent-post-info > .article-meta-wrap,
+#aside-content,
+#footer {
+  font-family: var(--blog-ui-font);
+}
+
+@media (max-width: 768px) {
+  #recent-posts > .recent-post-items > .recent-post-item > .recent-post-info > .article-title {
+    font-size: 1.55rem;
+  }
+}
